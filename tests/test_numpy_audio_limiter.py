@@ -1,3 +1,4 @@
+import fast_align_audio
 import numpy as np
 import numpy_audio_limiter
 
@@ -13,6 +14,15 @@ def test_mono():
     )
     assert y.shape == (1, 1800)
 
+    offset, corr = fast_align_audio.find_best_alignment_offset(
+        reference_signal=x,
+        delayed_signal=y[0],
+        max_offset_samples=1200,
+        method="corr"
+    )
+    assert corr >= 0.7
+    assert offset == 0
+
 
 def test_stereo():
     x = np.random.randn(1800).astype(np.float32).reshape((2, 900))
@@ -24,3 +34,13 @@ def test_stereo():
         threshold=0.5,
     )
     assert y.shape == (2, 900)
+
+    offset, corr = fast_align_audio.find_best_alignment_offset(
+        reference_signal=x[0],
+        delayed_signal=y[0],
+        max_offset_samples=600,
+        method="corr"
+    )
+
+    assert corr >= 0.7
+    assert offset == 0
