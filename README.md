@@ -1,6 +1,6 @@
 # numpy-audio-limiter
 
-A simple Python library for dynamic compression of audio. Made for integration with [audiomentations](https://github.com/iver56/audiomentations/). A rust port of cylimiter (C++) by pzelasko.
+A simple Python library for dynamic range compression of audio. Made for integration with [audiomentations](https://github.com/iver56/audiomentations/). Based on cylimiter (C++) by pzelasko, but has a few extras for fast delay compensation. The main motivation for porting it to Rust was that cylimiter appeared to be unmaintained and did not install well on Python 3.12 anymore. As audiomentations maintainer, I aim to keep it easy to install for relevant Python versions and operating systems, without fiddling with compilers and special environment variables. An extra bonus with this port is that it is **~30% faster** than cylimiter (in the context of audiomentations).
 
 # Installation
 
