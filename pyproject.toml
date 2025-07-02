@@ -1,0 +1,15 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "numpy-audio-limiter"
+version = "0.1.0"
+requires-python = ">=3.9"
+authors = [{ name = "Iver Jordal" }]
+description = "Simple Python audio limiter implemented in Rust (pyo3, operates on numpy array)."
+license = { text = "MIT" }
+
+[tool.maturin]
+bindings = "pyo3"
+requires-dist = ["numpy>=1.22"]
