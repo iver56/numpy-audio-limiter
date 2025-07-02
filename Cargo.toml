@@ -1,11 +1,11 @@
 [package]
-name = "rustlimiter"
+name = "numpy-audio-limiter"
 version = "0.1.0"
 edition = "2021"
 publish = false
 
 [lib]
-name = "rustlimiter"
+name = "numpy_audio_limiter"
 crate-type = ["cdylib"]
 
 [dependencies]
