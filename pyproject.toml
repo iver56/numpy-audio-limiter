@@ -9,6 +9,7 @@ requires-python = ">=3.10"
 authors = [{ name = "Iver Jordal" }]
 description = "Simple Python audio limiter implemented in Rust (pyo3, operates on numpy array)."
 license = { text = "MIT" }
+readme = "README.md"
 
 [project.urls]
 Homepage = "https://github.com/iver56/numpy-audio-limiter"
