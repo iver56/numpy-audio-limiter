@@ -180,6 +180,6 @@ jobs:
       - name: Install test dependencies
         run: pip install -r dev_requirements.txt
       - name: Install wheel
-        run: pip install dist/*cp*.whl
+        run: pip install dist/*cp3*.whl
       - name: Run test suite
         run: pytest
