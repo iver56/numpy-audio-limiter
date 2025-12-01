@@ -1,4 +1,3 @@
-fast-align-audio
 maturin>=1,<2
 numpy>=1.22,<3
 pytest>7,<8
