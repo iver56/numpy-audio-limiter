@@ -39,9 +39,11 @@ assert y.shape == (1, 1800)
 
 ## Changelog
 
-## [0.1.0] - 2025-07-02
+## [0.2.0] - 2025-12-01
 
-Initial release
+### Changed
+
+* Bump min Python version to 3.10 because 3.9 has reached EOL
 
 For the complete changelog, go to [CHANGELOG.md](CHANGELOG.md)
 
