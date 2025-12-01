@@ -5,7 +5,7 @@ A simple Python library for dynamic range compression of audio. Made for integra
 # Installation
 
 [![PyPI version](https://img.shields.io/pypi/v/numpy-audio-limiter.svg?style=flat)](https://pypi.org/project/numpy-audio-limiter/)
-![python 3.9, 3.10, 3.11, 3.12, 3.13](https://img.shields.io/badge/Python-3.9%20|%203.10%20|%203.11%20|%203.12%20|%203.13-blue)
+![python 3.10, 3.11, 3.12, 3.13, 3.14](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12%20|%203.13%20|%203.14-blue)
 ![os: Linux, macOS, Windows](https://img.shields.io/badge/OS-Linux%20%28arm%20%26%20x86--64%29%20|%20macOS%20%28arm%29%20|%20Windows%20%28x86--64%29-blue)
 
 ```

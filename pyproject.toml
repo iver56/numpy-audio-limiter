@@ -5,7 +5,7 @@ build-backend = "maturin"
 [project]
 name = "numpy-audio-limiter"
 version = "0.1.0"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Iver Jordal" }]
 description = "Simple Python audio limiter implemented in Rust (pyo3, operates on numpy array)."
 license = { text = "MIT" }
