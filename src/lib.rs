@@ -78,7 +78,7 @@ fn limit<'py>(
         lim.process(slice);
     }
 
-    Ok(out.into_pyarray_bound(py))
+    Ok(out.into_pyarray(py))
 }
 
 #[pymodule]
